@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type ="Command">
+		<Assembly>C:\Program Files\RevitAPITraining\RevitAPIApp52.dll</Assembly>
+		<AddInId>E3D8843C-DE33-4E18-97DD-E7B1CDBF2BBB</AddInId>
+		<FullClassName>RevitAPIApp52.Main</FullClassName>
+		<VendorId>ADSK</VendorId>
+		<Text>Изменение типа стен WPF</Text>
+		<VisibilityMode>AlwaysVisible</VisibilityMode>
+	</AddIn>
+</RevitAddIns>

@@ -1,0 +1,30 @@
+﻿<Window x:Class="RevitAPIApp52.MainWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RevitAPIApp52"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="400">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Доступные типы стен:" FontWeight="Bold" Margin="0,0,0,10"/>
+
+        <ListBox Grid.Row="1" 
+                 ItemsSource="{Binding WallTypes}"
+                 SelectedItem="{Binding SelectedWallType}"
+                 DisplayMemberPath="Name"
+                 Margin="0,0,0,15"/>
+
+        <Button Grid.Row="2" 
+                Content="Изменить тип" 
+                Command="{Binding ChangeTypeCommand}"
+                Width="120" Height="30"
+                HorizontalAlignment="Right"/>
+    </Grid>
+</Window>
